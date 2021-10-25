@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Product;
 
 class ProductsTableSeeder extends Seeder
 {
@@ -12,13 +13,13 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         //
-        factory(Product::class, 10)->create();
+        factory(Product::class, 3)->create();
 
         // $datas = [
         //   ['product_name' => '水'],
         //   ['product_name' => '麦茶'],
         //   ['product_name' => 'オレンジジュース'],
-        //   ['product_name' => '緑茶'],
+        //   ['produc
         //   ['product_name' => 'スポーツドリンク'],
         //   ['product_name' => 'コーヒー'],
         // ];

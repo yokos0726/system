@@ -11,12 +11,12 @@
   </head>
 
   <body>
-    <form class="form-signup" method="POST" action="{{　route('register')　}}">
+    <form class="form-signup" method="POST" action="{{ route('register') }}">
       @csrf
       <h1 class="h3 mb-3 font-weight-normal">新規登録画面</h1>
 
-      <label for="username" class="sr-only">ユーザー名</label>
-      <input type="text" name="username" class="form-control" placeholder="ユーザー名" required autofocus>
+      <label for="user_name" class="sr-only">ユーザー名</label>
+      <input type="text" name="user_name" class="form-control" placeholder="ユーザー名" required autofocus>
 
       @if ($errors->has('username'))
       <div class="text-danger">
@@ -42,16 +42,17 @@
       </div>
       @endif
 
-      <label for="password_conf" class="sr-only">パスワード確認</label>
-      <input type="password" name="password_conf" class="form-control" placeholder="パスワード確認" required autofocus>
+      <label for="password_confirmation" class="sr-only">パスワード確認</label>
+      <input type="password" name="password_confirmation" class="form-control" placeholder="パスワード確認" required autofocus>
 
-      @if ($errors->has('password_conf'))
+      @if ($errors->has('password_confirmation'))
       <div class="text-danger">
-        {{$errors->first('password_conf')}}
+        {{$errors->first('password_confirmation')}}
       </div>
       @endif
 
       <button class="btn btn-lg btn-primary btn-block" type="submit">新規登録</button>
+      <a href="{{ route('showLogin') }}">戻る</a>
 
     </form>
 

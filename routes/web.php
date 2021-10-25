@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\ProductsController;
+use App\Http\Controllers\Auth\LoginController;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +17,10 @@ use App\Http\Controllers\Auth\ProductsController;
 |
 */
 
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
 //ログインフォーム表示
 Route::get('/', [AuthController::class,'showLogin'])->name('showLogin');
 //ログイン処理
@@ -21,15 +28,33 @@ Route::post('login',[AuthController::class, 'login'])->name('login');
 
 
 
-//ログイン後の商品一覧画面表示
-Route::get('login/products' , [ProductsController::class, 'showList'])->name('showList');
-
-
-//新規登録画面を表示
+//ユーザー新規登録画面を表示
 Route::get('/login/sign_up', [AuthController::class,'showSignUp'])->name('sign_up');
-//新規登録
+//ユーザー新規登録処理
 Route::post('/login/register',[AuthController::class, 'exeRegister'])->name('register');
+//新規登録完了画面を表示
+// Route::get('/login/register_comp', [AuthController::class,'showRegisterComp'])->name('register_comp');
 
 
+//ログイン後の商品一覧画面表示
+Route::get('/login/products' , [ProductsController::class, 'showList'])->name('showList');
+//検索機能
+Route::post('/serch',[ProductsController::class, 'serch'])->name('serch');
+//詳細表示
+Route::get('/product/{id}',[ProductsController::class, 'showDetail'])->name('showDetail');
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+//商品登録画面表示
+Route::get('/products/create' , [ProductsController::class, 'showCreate'])->name('showCreate');
+//商品登録
+Route::post('/products/store' , [ProductsController::class, 'exeStore'])->name('exeStore');
+//商品削除
+Route::post('/products/delete/{id}' , [ProductsController::class, 'exeDelete'])->name('exeDelete');
+//商品編集画面表示
+Route::get('/products/edit/{id}' , [ProductsController::class, 'showEdit'])->name('showEdit');
+//商品編集
+Route::post('/products/update' , [ProductsController::class, 'exeUpdate'])->name('exeUpdate');
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
+

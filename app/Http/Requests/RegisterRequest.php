@@ -25,9 +25,9 @@ class RegisterRequest extends FormRequest
     {
         return [
           'name' => 'required',
-          'email' => 'required | alpha_num',
+          'email' => 'required',
           'password' => 'required | alpha_num',
-          'password_conf' => 'required | alpha_num | different:'password'',
+          'password_conf' => 'required | alpha_num | different:[password]',
             //
         ];
     }

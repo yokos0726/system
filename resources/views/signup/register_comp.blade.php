@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>新規登録完了画面</title>
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js')}}" defer></script>
-    <!-- Styles-->
-    <link href="{{ asset('css/app.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/signin.css')}}" rel="stylesheet">
-  </head>
-
-  <body>
-
-      <h1 class="h3 mb-3 font-weight-normal">新規登録完了画面</h1>
-
-      <p>新規登録が完了しました</p>
-      <a href="{{ route('showLogin') }}">ログイン画面へ戻る</a>
-
-
-    </form>
-
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新規登録完了画面</title>
+    </head>
+    <body>
+        <h1>ユーザー新規登録が完了しました。</h1>
+        <a href="{{ route('showLogin') }}">ログイン画面へ戻る</a>
+    </body>
 </html>

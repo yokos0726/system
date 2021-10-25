@@ -5,6 +5,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Database\Seeds;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,11 +18,16 @@ class DatabaseSeeder extends Seeder
     {
 
 
-        $this->call(UsersTableSeeder::class);
+        $this->call([
+
+            UsersTableSeeder::class,
+            ProductsTableSeeder::class,
+            SalesTableSeeder::class,
+            // CompaniesTableSeeder::class,
+        ]);
 
 
     }
-
 
 
 }

@@ -4,9 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\LoginFormRequest;
+// use App\Http\Requests\LoginFormRequest;
 use App\Http\Requests\RegisterRequest;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class AuthController extends Controller
 {
@@ -19,23 +20,24 @@ class AuthController extends Controller
       return view('login.login_form');
     }
 
-    /**
-     * @param App\Http\Requests\LoginFormRequest
-     */
-    public function login(LoginFormRequest $request)
+    public function login(Request $request)
     {
-      $credentials = $request->only('email','password');
+
+      
+      
+      $credentials = $request->only('email', 'password');
 
       if(Auth::attempt($credentials)) {
-        $request->session()->regenerate();
-
-        return redirect('login/products')->with('login_success','ログイン成功しました');
+        // 認証に成功した
+        return redirect()->intended('/login/products');
       }
-      //入力に誤りがあったらエラーを返す
+    
       return back()->withErrors([
         'login_error' => 'メールアドレスかパスワードが間違っています。',
       ]);
     }
+
+    
 
     //新規登録フォーム表示
     /**
@@ -47,21 +49,39 @@ class AuthController extends Controller
     }
 
 
-    //ユーザー登録する
-    /**
-     * @return View
-     */
-    public function exeRegister(RegisterRequest $request)
-    {
-      //ユーザーのデータをうけとる
-      $inputs = $request->all();
-      //ユーザー登録
-      User::create($inputs);
-
-      \Session::flash('err_msg', 'ユーザー登録が完了しました');
-
-      return view('login.login_form');
-    }
-
+  //ユーザー登録する
+  /**
+  * @return View
+  */
+  public function exeRegister(Request $request)
+  {
+    // バリデーション
+    $this->validate($request,[
+      'user_name' => 'required',
+      'email' => 'email|required|unique:users',
+      'password' => 'required|confirmed',
+      'password_confirmation' => 'required',
+        
+    ]);
+     
+    // DBインサート
+    $user = new User([
+      'user_name' => $request->input('user_name'),
+      'email' => $request->input('email'),
+      'password' => bcrypt($request->input('password')),
+        
+    ]);
+     
+    // 保存
+    $user->save();
+     
+    // リダイレクト
+    return redirect()->route('showLogin')->with('flash_message','新規ユーザー登録が完了しました');
+  }
+    
+  //   public function showRegisterComp()
+  // {
+  //   return view('signup.register_comp');
+  // }
 
 }
