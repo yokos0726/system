@@ -162,11 +162,7 @@ class ProductsController extends Controller
           
         ]);
       }
-    //それ以外の時のエラー表示
-    elseif($products->isEmpty()) {
-      
-      return view('product.list')->with('flash_message', '該当する商品がございません');
-    }
+    
 
   }
 

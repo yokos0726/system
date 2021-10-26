@@ -4,14 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-// use App\Http\Requests\LoginFormRequest;
 use App\Http\Requests\RegisterRequest;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 
 class AuthController extends Controller
 {
-    //ログインフォーム
+    //ログインフォーム表示
     /**
      * @return View
      */
@@ -20,6 +19,10 @@ class AuthController extends Controller
       return view('login.login_form');
     }
 
+    //ログイン機能
+    /**
+     * @return View
+     */
     public function login(Request $request)
     {
 
@@ -50,9 +53,7 @@ class AuthController extends Controller
 
 
   //ユーザー登録する
-  /**
-  * @return View
-  */
+  
   public function exeRegister(Request $request)
   {
     // バリデーション
