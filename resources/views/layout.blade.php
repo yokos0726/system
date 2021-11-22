@@ -30,5 +30,9 @@
      <span class="text-light"></span>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="{{ asset('js/search.js') }}"></script>
+  <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
 </body>
 </html>

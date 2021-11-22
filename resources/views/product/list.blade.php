@@ -5,7 +5,7 @@
 @section('content')
 <h6>＜検索条件を入力してください＞</h6>
 
-<form action="{{ route('serch') }}" method="post">
+<form id="search_form">
   @CSRF
 
   @if(session('flash_message'))
