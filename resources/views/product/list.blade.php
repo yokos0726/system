@@ -77,10 +77,6 @@
             @endforeach
         </div>
 
-        
-        @endforeach
-
-        
       </table>
     </div>
   </div>
