@@ -5,7 +5,7 @@
 @section('content')
 <h6>＜検索条件を入力してください＞</h6>
 
-<form id="search_form">
+<form>
   @CSRF
 
   @if(session('flash_message'))
@@ -32,7 +32,7 @@
     </select>
   </div>
 
-  <button type="submit" class="btn btn-primary col-md-5">検索</button>
+  <button id="search_form" type="submit" class="btn btn-primary col-md-5">検索</button>
 
 </form>
 
@@ -57,21 +57,27 @@
           
 
         </tr>
-        @foreach($products as $product)
-        <tr>
-          <td>{{ $product->id }}</td>
-          <td>{{ $product->product_name }}</td>
-          <td>{{ $product->price }}</td>
-          <td>{{ $product->stock }}</td>
-          <td>{{ optional($product->company)->company_name }}</td>
-          <td><img src="{{ asset('uploads/'.$product->image) }}" width="50px"></td>
-          <td><a href="/product/{{ $product->id }}">詳細表示</a></td>
-          <form method="POST" action="{{ route('exeDelete', $product->id) }}" onSubmit="return checkSubmit()">
-            @CSRF
-            <td><button type="submit" class="btn btn-primary" onclick>削除</button></td>
-          </form>
+        
+        <div class="list_section">
+            @foreach($products as $product)
+            <tr>
+              <td>{{ $product->id }}</td>
+              <td>{{ $product->product_name }}</td>
+              <td>{{ $product->price }}</td>
+              <td>{{ $product->stock }}</td>
+              <td>{{ optional($product->company)->company_name }}</td>
+              <td><img src="{{ asset('uploads/'.$product->image) }}" width="50px"></td>
+              <td><a href="/product/{{ $product->id }}">詳細表示</a></td>
+              <form method="POST" action="{{ route('exeDelete', $product->id) }}" onSubmit="return checkSubmit()">
+                @CSRF
+                <td><button type="submit" class="btn btn-primary" onclick>削除</button></td>
+              </form>
 
-        </tr>
+            </tr>
+            @endforeach
+        </div>
+
+        
         @endforeach
 
         
