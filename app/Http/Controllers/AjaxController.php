@@ -29,7 +29,7 @@ class AjaxController extends Controller
 
   //検索機能実装
 
-  public function search (Request $request) {
+  public function serch (Request $request) {
     $keyword_product_name = $request->product_name;
     $keyword_company = $request->company;
 
@@ -40,115 +40,241 @@ class AjaxController extends Controller
       $json = ["products" => $products];
 
       return response()->json($json);
-    }
+    
+    
       //メーカーIDが1の時
-      elseif(empty($keyword_product_name) && ($keyword_company == 1)){
+    }elseif(empty($keyword_product_name) && ($keyword_company == 1)){
         $query = Product::query();
         $products = $query->where('company_id','1')->get();
         $json = ["products" => $products];
 
         return response()->json($json);
-      }
-      elseif(!empty($keyword_product_name) && ($keyword_company == 1)){
+          
+       
+    }elseif(!empty($keyword_product_name) && ($keyword_company == 1)){
         $query = Product::query();
         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','1')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
+          
+       
+      
       
       //メーカーIDが2の時
-      elseif(empty($keyword_product_name) && ($keyword_company == 2)){
+    }elseif(empty($keyword_product_name) && ($keyword_company == 2)){
         $query = Product::query();
         $products = $query->where('company_id','2')->get();
-
         $json = ["products" => $products];
-        
-        return response()->json($json);
-      }
 
-      elseif(!empty($keyword_product_name) && ($keyword_company == 2)){
+        return response()->json($json);
+          
+       
+    }elseif(!empty($keyword_product_name) && ($keyword_company == 2)){
         $query = Product::query();
         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','2')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
+          
+      
+      
       //メーカーIDが3の時
-      elseif(empty($keyword_product_name) && ($keyword_company == 3)){
+    }elseif(empty($keyword_product_name) && ($keyword_company == 3)){
         $query = Product::query();
         $products = $query->where('company_id','3')->get();
-
         $json = ["products" => $products];
-        
-        return response()->json($json);
-      }
 
-      elseif(!empty($keyword_product_name) && ($keyword_company == 3)){
+        return response()->json($json);
+          
+       
+    }elseif(!empty($keyword_product_name) && ($keyword_company == 3)){
         $query = Product::query();
         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','3')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
+          
+       
+      
       //メーカーIDが4の時
-      elseif(empty($keyword_product_name) && ($keyword_company == 4)){
+    }elseif(empty($keyword_product_name) && ($keyword_company == 4)){
         $query = Product::query();
         $products = $query->where('company_id','4')->get();
-
         $json = ["products" => $products];
-        
-        return response()->json($json);
-      }
 
-      elseif(!empty($keyword_product_name) && ($keyword_company == 4)){
+        return response()->json($json);
+          
+      
+    }elseif(!empty($keyword_product_name) && ($keyword_company == 4)){
         $query = Product::query();
         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','4')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
+   
+      
       //メーカーIDが5の時
-      elseif(empty($keyword_product_name) && ($keyword_company == 5)){
+    }elseif(empty($keyword_product_name) && ($keyword_company == 5)){
         $query = Product::query();
         $products = $query->where('company_id','5')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
-      elseif(!empty($keyword_product_name) && ($keyword_company == 5)){
+          
+        
+    }elseif(!empty($keyword_product_name) && ($keyword_company == 5)){
         $query = Product::query();
         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','5')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
+          
+       
+      
       //メーカーIDが6の時
-      elseif(empty($keyword_product_name) && ($keyword_company ==  6)){
+    }elseif(empty($keyword_product_name) && ($keyword_company ==  6)){
         $query = Product::query();
         $products = $query->where('company_id','6')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
-      elseif(!empty($keyword_product_name) && ($keyword_company == 6)){
+          
+       
+    }elseif(!empty($keyword_product_name) && ($keyword_company == 6)){
         $query = Product::query();
         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','6')->get();
-
         $json = ["products" => $products];
-        
+
         return response()->json($json);
-      }
+          
+       
+    }
     
 
   }
+
+
+//   public function search (Request $request) {
+//     $keyword_product_name = $request->product_name;
+//     $keyword_company = $request->company;
+
+//     //メーカー名が空の時
+//     if(!empty($keyword_product_name) && ($keyword_company == 0)){
+//       $query = Product::query();
+//       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->get();
+//       $json = ["products" => $products];
+
+//       return response()->json($json);
+//     }
+//       //メーカーIDが1の時
+//       elseif(empty($keyword_product_name) && ($keyword_company == 1)){
+//         $query = Product::query();
+//         $products = $query->where('company_id','1')->get();
+//         $json = ["products" => $products];
+
+//         return response()->json($json);
+//       }
+//       elseif(!empty($keyword_product_name) && ($keyword_company == 1)){
+//         $query = Product::query();
+//         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','1')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+      
+//       //メーカーIDが2の時
+//       elseif(empty($keyword_product_name) && ($keyword_company == 2)){
+//         $query = Product::query();
+//         $products = $query->where('company_id','2')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+
+//       elseif(!empty($keyword_product_name) && ($keyword_company == 2)){
+//         $query = Product::query();
+//         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','2')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+//       //メーカーIDが3の時
+//       elseif(empty($keyword_product_name) && ($keyword_company == 3)){
+//         $query = Product::query();
+//         $products = $query->where('company_id','3')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+
+//       elseif(!empty($keyword_product_name) && ($keyword_company == 3)){
+//         $query = Product::query();
+//         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','3')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+//       //メーカーIDが4の時
+//       elseif(empty($keyword_product_name) && ($keyword_company == 4)){
+//         $query = Product::query();
+//         $products = $query->where('company_id','4')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+
+//       elseif(!empty($keyword_product_name) && ($keyword_company == 4)){
+//         $query = Product::query();
+//         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','4')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+//       //メーカーIDが5の時
+//       elseif(empty($keyword_product_name) && ($keyword_company == 5)){
+//         $query = Product::query();
+//         $products = $query->where('company_id','5')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+//       elseif(!empty($keyword_product_name) && ($keyword_company == 5)){
+//         $query = Product::query();
+//         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','5')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+//       //メーカーIDが6の時
+//       elseif(empty($keyword_product_name) && ($keyword_company ==  6)){
+//         $query = Product::query();
+//         $products = $query->where('company_id','6')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+//       elseif(!empty($keyword_product_name) && ($keyword_company == 6)){
+//         $query = Product::query();
+//         $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','6')->get();
+
+//         $json = ["products" => $products];
+        
+//         return response()->json($json);
+//       }
+    
+
+//   }
 
   
 

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\AjaxController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -39,10 +40,11 @@ Route::post('/login/register',[AuthController::class, 'exeRegister'])->name('reg
 //ログイン後の商品一覧画面表示
 Route::get('/login/products' , [ProductsController::class, 'showList'])->name('showList');
 //検索機能
-Route::post('/serch',[ProductsController::class, 'serch'])->name('serch');
+// Route::post('/serch',[ProductsController::class, 'serch'])->name('serch');
 //詳細表示
 Route::get('/product/{id}',[ProductsController::class, 'showDetail'])->name('showDetail');
-
+//非同期通信の検索機能
+Route::post('/search',[AjaxController::class, 'search'])->name('search');
 
 //商品登録画面表示
 Route::get('/products/create' , [ProductsController::class, 'showCreate'])->name('showCreate');
