@@ -6,7 +6,7 @@
 <h6>＜検索条件を入力してください＞</h6>
 
 <form>
-  @CSRF
+  
 
   @if(session('flash_message'))
       <div class="text-danger">
@@ -43,23 +43,21 @@
       @if (!empty($message))
         <p class="text-danger">{{ $message }}</p>
       @endif
-
-      <table class="table table-striped">
-        <tr>
-          <th>商品ID</th>
-          <th>商品名</th>
-          <th>値段</th>
-          <th>在庫数</th>
-          <th>メーカー名</th>
-          <th>商品画像</th>
-          <th></th>
-          <th></th>
+    
+        <table class="table table-striped">
+          <tr>
+            <th>商品ID</th>
+            <th>商品名</th>
+            <th>値段</th>
+            <th>在庫数</th>
+            <th>メーカー名</th>
+            <th>商品画像</th>
+            <th></th>
+            <th></th>
+          </tr>
           
-
-        </tr>
-        
-        <div class="list_section">
-            @foreach($products as $product)
+          @foreach($products as $product)
+          <div id="return">
             <tr>
               <td>{{ $product->id }}</td>
               <td>{{ $product->product_name }}</td>
@@ -68,19 +66,18 @@
               <td>{{ optional($product->company)->company_name }}</td>
               <td><img src="{{ asset('uploads/'.$product->image) }}" width="50px"></td>
               <td><a href="/product/{{ $product->id }}">詳細表示</a></td>
-              <form method="POST" action="{{ route('exeDelete', $product->id) }}" onSubmit="return checkSubmit()">
-                @CSRF
-                <td><button type="submit" class="btn btn-primary" onclick>削除</button></td>
+              <form>
+                <td><button id="delete_product" type="submit" class="btn btn-primary">削除</button></td>
               </form>
-
             </tr>
-            @endforeach
-        </div>
-
-      </table>
+          </div>
+          @endforeach 
+        </table>
+      
     </div>
+   
   </div>
-<script>
+<!-- <script>
   function checkSubmit(){
   if(window.confirm('削除してよろしいですか？')){
       return true;
@@ -88,5 +85,5 @@
       return false;
   }
   }
-</script>
+</script> -->
 @endsection
