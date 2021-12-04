@@ -2,10 +2,12 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="token" content="{{ csrf_token() }}">
     <title></title>
     <link rel="stylesheet" href="/css/app.css">
-    <script src="/js/app.js" defer></script>
+    <script src="/js/search.js" defer></script>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,14 +27,13 @@
   <div class="container">
     @yield('content')
   </div>
-  <footer class="footer bg-dark  fixed-bottom">
-    <div class="container text-center">
-     <span class="text-light"></span>
-    </div>
-  </footer>
-
+    <footer class="footer bg-dark  fixed-bottom">
+      <div class="container text-center">
+      <span class="text-light"></span>
+      </div>
+    </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="{{ asset('js/search.js') }}"></script>
-  <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('/js/search.js') }}"></script>
+  <script src="{{ asset('/js/jquery-3.6.0.min.js') }}"></script>
 </body>
 </html>

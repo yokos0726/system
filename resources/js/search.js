@@ -1,7 +1,7 @@
 $(function(){
     $('#search_form').on('click', function(){
         $('.list_section').empty();
-        let productsList = $('#search_form').val();
+        let productsList = $('.form-control').val();
             if(!productsList){
                 return false;
             }
@@ -11,7 +11,7 @@ $(function(){
                 url: '/search',
                 type: 'get',
                 data: {
-                    'search_form': productsList,
+                    'form-control': productsList,
                 },
                 datatype: 'json',
             })
