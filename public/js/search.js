@@ -1,84 +1,84 @@
 $(function(){
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
     $('#search_form').on('click', function(){
-        $('.list_section').empty();
-        let productsList = $('.form-control').val();
-            if(!productsList){
-                return false;
-            }
+        
+        
+       
+        let product_name = $('#search_text').val();
+        let company_id = $('[name=company]').val(); 
+        let price_min = $('#price_min').val();
+        let price_max = $('#price_max').val();
+        let stock_min = $('#stock_min').val();
+        let stock_max = $('#stock_max').val();
 
        
-            $.ajax({
-                url: '/search',
-                type: 'get',
-                data: {
-                    'form-control': productsList,
-                },
-                datatype: 'json',
-            })
-            .done(function (data) { //ajaxが成功したときの処理
-                let html = '';
-
-                $.each(data,function(index,value){
-                    let id = value.id;
-                    let product_name = value.product_name;
-                    let price = value.price;
-                    let stock = value.stock;
-                    let company_name = value.company_name;
-                    let image = value.image;
-
-                
-            html = `
-                <tr>
-                    <td>${id}</td>
-                    <td>${product_name}</td>
-                    <td>${price}</td>
-                    <td>${stock}</td>
-                    <td>${company_name}</td>
-                    <td><img src="${image}" width="50px"></td>
-                    <td><a href="/product/${id}">詳細表示</a></td>
-                    <form>
-                    <td><button id="delete_product" type="submit" class="btn btn-primary">削除</button></td>
-                    </form>
-                </tr>
-            `
+        
+         $.ajax({
+            url: '/search/'+ product_name + '/' + company_id + '/' + price_min + '/' + price_max + '/' + stock_min + '/' + stock_max ,
+            type: 'get',
+            data: {
+                'product_name': product_name,
+                'company_id':company_id,
+                'price_min':price_min,
+                'price_max':price_max,
+                'stock_min':stock_min,
+                'stock_max':stock_max,
+            }, 
+            datatype: 'json',
+              
         })
+            .done(function (data) { //ajaxが成功したときの処
                 
-             $('#return').append(html);
-        }).fail(function () {
-    　　　
+                $('#list').find("tr:gt(0)").remove();
+                $.each(data,function(_index,value){
+
+                   
+                
+                $('#list').append("<tr><td>" + value.id + "</td><td>" + value.product_name + "</td><td>" + value.price + "</td><td>" + value.stock + "</td><td>" + value.company_name + "</td><td>" +  "<img src='http://localhost:8888/uploads/" + value.image + "' width='50px'>" +  "</td></tr>");
+                });
+                
+            }).fail(function () {
             //ajax通信がエラーのときの処理
                 console.log('データなし');
             })
-      
+        return false;
+    });
 
-    })
-
-    $('#delete_product').on('click', function(){
+    $('.delete_product').on('click', function(){
         var deleteConfirm = confirm('削除してよろしいですか？');
 
         if(deleteConfirm == true) {
-            
+            var clickEle = $(this)
+            var id = clickEle.data("id");
+
             $.ajax({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                url: 'ProductsController.php',
+                // headers: {
+                //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                // },
+                url: '/products/delete/' + id,
                 type: 'POST',
-                data: {'product_id': '{{ $product->id }}',
-                '_method':'DELETE'},
+                data: {'id': id,
+                // '_method':'DELETE'
+                },
             })
             .done(function () { //ajaxが成功したときの処理
             
-                clickEle.parent('tr').remove();
+                clickEle.parents('tr').remove();
            
             })
-            .fail(function (jqXHR,textStatus,errorThrown) {
-　　　      //ajax通信がエラーのときの処理
-            alert('データなし');
-            console.log("jqXHR  :"+ jqXHR.status);
-            console.log("textStatus  :"+ textStatus);
-            console.log("errorThrown  :"+ errorThrown.message);
-            console.log("URL  :"+ url);
+            .fail(function () {
+            //ajax通信がエラーのときの処理
+                alert('データなし');
+                // console.log("jqXHR  :"+ jqXHR.status);
+                // console.log("textStatus  :"+ textStatus);
+                // console.log("errorThrown  :"+ errorThrown.message);
+                // console.log("URL  :"+ url);
 
 
             });
@@ -91,11 +91,5 @@ $(function(){
         };
 
     });
-});
-
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="token]').attr('content')
-    }
 });
 

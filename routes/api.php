@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//salesテーブルレコード追加
+Route::post('buy' , 'API\SalesController@BuyProducts');
+
+//在庫数減算
+Route::post('decreProducts' , 'API\SalesController@DecrementProducts');

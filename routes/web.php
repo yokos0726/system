@@ -44,14 +44,14 @@ Route::get('/login/products' , [ProductsController::class, 'showList'])->name('s
 //詳細表示
 Route::get('/product/{id}',[ProductsController::class, 'showDetail'])->name('showDetail');
 //非同期通信の検索機能
-Route::post('/search',[AjaxController::class, 'search'])->name('search');
+Route::get('/search/{product_name?}/{company_id?}/{price_min?}/{price_max?}/{stock_min?}/{stock_max?}',[AjaxController::class, 'search'])->name('search');
 
 //商品登録画面表示
 Route::get('/products/create' , [ProductsController::class, 'showCreate'])->name('showCreate');
 //商品登録
 Route::post('/products/store' , [ProductsController::class, 'exeStore'])->name('exeStore');
 //商品削除
-Route::post('/products/delete/{id}' , [ProductsController::class, 'exeDelete'])->name('exeDelete');
+Route::post('/products/delete/{id?}' , [AjaxController::class, 'exeDelete'])->name('exeDelete');
 //商品編集画面表示
 Route::get('/products/edit/{id}' , [ProductsController::class, 'showEdit'])->name('showEdit');
 //商品編集

@@ -18,7 +18,7 @@ class ProductsController extends Controller
   public function showList()
   {
 
-    $products = Product::with('company')->get();
+    $products = Product::with('company')->sortable()->get();
 
 
 
@@ -27,136 +27,7 @@ class ProductsController extends Controller
     
   }
 
-  //検索機能実装
-
-  // public function serch (Request $request) {
-  //   $keyword_product_name = $request->product_name;
-  //   $keyword_company = $request->company;
-
-  //   //メーカー名が空の時
-  //   if(!empty($keyword_product_name) && ($keyword_company == 0)){
-  //     $query = Product::query();
-  //     $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->get();
-  //     $message ="「".$keyword_product_name."」を含む商品の検索が完了しました。";
-      
-  //     return view('product.list')->with([
-  //       'products' => $products,
-  //       'message' => $message,
-  //     ]);
-    
-  //     //メーカーIDが1の時
-  //   }elseif(empty($keyword_product_name) && ($keyword_company == 1)){
-  //       $query = Product::query();
-  //       $products = $query->where('company_id','1')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }elseif(!empty($keyword_product_name) && ($keyword_company == 1)){
-  //       $query = Product::query();
-  //       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','1')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-      
-      
-  //     //メーカーIDが2の時
-  //   }elseif(empty($keyword_product_name) && ($keyword_company == 2)){
-  //       $query = Product::query();
-  //       $products = $query->where('company_id','2')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }elseif(!empty($keyword_product_name) && ($keyword_company == 2)){
-  //       $query = Product::query();
-  //       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','2')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-      
-  //     //メーカーIDが3の時
-  //   }elseif(empty($keyword_product_name) && ($keyword_company == 3)){
-  //       $query = Product::query();
-  //       $products = $query->where('company_id','3')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }elseif(!empty($keyword_product_name) && ($keyword_company == 3)){
-  //       $query = Product::query();
-  //       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','3')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-      
-  //     //メーカーIDが4の時
-  //   }elseif(empty($keyword_product_name) && ($keyword_company == 4)){
-  //       $query = Product::query();
-  //       $products = $query->where('company_id','4')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }elseif(!empty($keyword_product_name) && ($keyword_company == 4)){
-  //       $query = Product::query();
-  //       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','4')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-      
-  //     //メーカーIDが5の時
-  //   }elseif(empty($keyword_product_name) && ($keyword_company == 5)){
-  //       $query = Product::query();
-  //       $products = $query->where('company_id','5')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }elseif(!empty($keyword_product_name) && ($keyword_company == 5)){
-  //       $query = Product::query();
-  //       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','5')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-      
-  //     //メーカーIDが6の時
-  //   }elseif(empty($keyword_product_name) && ($keyword_company ==  6)){
-  //       $query = Product::query();
-  //       $products = $query->where('company_id','6')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }elseif(!empty($keyword_product_name) && ($keyword_company == 6)){
-  //       $query = Product::query();
-  //       $products = $query->where('product_name','like','%'.$keyword_product_name.'%')->where('company_id','6')->get();
-
-  //       return view('product.list')->with([
-  //         'products' => $products,
-          
-  //       ]);
-  //   }
-    
-
-  // }
-
+  
   
 
 
@@ -214,28 +85,33 @@ class ProductsController extends Controller
 
   }
 
-  /**
-   * 商品情報削除
-   *@param int $id
-  *@return view
-  */
-  public function exeDelete($id)
-  {
-    if(empty($id)) {
-      \Session::flash('flash_message', 'データがありません');
-      return redirect('product.list');
-    }
+  // /**
+  //  * 商品情報削除
+  //  *@param int $id
+  // *@return view
+  // */
 
-    try{
-      Product::destroy($id);
-    } catch(\Throwable $e) {
-      abort(500);
-    }
-    Product::destroy($id);
+  // public function exeDelete(Request $request, Product $product){
+  //   $product = Product::findOrFail($request->product_id);
+  //   $product->delete();
+  // }
+  // public function exeDelete($id)
+  // {
+  //   if(empty($id)) {
+  //     \Session::flash('flash_message', 'データがありません');
+  //     return redirect('product.list');
+  //   }
 
-    \Session::flash('flash_message', '削除しました');
-      return redirect(route('showList'));
-  }
+  //   try{
+  //     Product::destroy($id);
+  //   } catch(\Throwable $e) {
+  //     abort(500);
+  //   }
+  //   Product::destroy($id);
+
+  //   \Session::flash('flash_message', '削除しました');
+  //     return redirect(route('showList'));
+  // }
 
   /**
    * 商品編集画面を表示

@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title></title>
     <link rel="stylesheet" href="/css/app.css">
     <script src="/js/search.js" defer></script>

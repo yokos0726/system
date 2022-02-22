@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Kyslik\ColumnSortable\Sortable;
 
 class Company extends Model
 {
+  use Sortable;
   //テーブル名
   protected $table = 'companies';
   //可変項目
@@ -13,6 +15,11 @@ class Company extends Model
   [
     'company_name',
     'street_address'
+  ];
+  protected $sortable = 
+  [
+    'company_name'
+
   ];
 
   protected $primaryKey = "id";

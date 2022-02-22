@@ -1,0 +1,1529 @@
+array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 1,
+    'product_name' => '緑茶',
+    'price' => 120,
+    'stock' => 10,
+    'image' => '1635173059緑茶.jpg',
+    'company_name' => '株式会社 加納',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'product_name' => 'コーヒー',
+    'price' => 100,
+    'stock' => 15,
+    'image' => '1635160788コーヒー.jpg',
+    'company_name' => '株式会社 渚',
+  ),
+  2 => 
+  array (
+    'id' => 3,
+    'product_name' => 'オレンジジュース',
+    'price' => 150,
+    'stock' => 30,
+    'image' => '1634219751オレンジジュース.jpg',
+    'company_name' => '株式会社 浜田',
+  ),
+  3 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  4 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+)array (
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+)array (
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'product_name' => 'スポーツドリンク',
+    'price' => 150,
+    'stock' => 65,
+    'image' => '1634219673スポドリ１.jpg',
+    'company_name' => '有限会社 石田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+  0 => 
+  array (
+    'id' => 4,
+    'product_name' => 'スポーツドリンク',
+    'price' => 130,
+    'stock' => 74,
+    'image' => '1634219648supodori.jpg',
+    'company_name' => '有限会社 吉田',
+  ),
+)array (
+)array (
+)
